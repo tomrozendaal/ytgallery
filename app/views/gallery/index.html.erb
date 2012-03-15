@@ -1,0 +1,16 @@
+<% @vids.each_with_index do |vid,index| %>
+
+	<% vid.each_with_index do |vid,index|%>
+		<div style="float:left; width:<%= vid.thumbnails[0].width %>px; height:<%= vid.thumbnails[0].height %>px;" class="thumb" view_count="<%= vid.view_count %>">
+			<img src="<%= vid.thumbnails[0].url %>" width="100%" height="100%"/>
+		</div>
+	<% end %>
+<% end %>
+
+
+
+<div class="clear">
+<div class="clear_left">
+<div class="clear_right">
+
+

@@ -1,0 +1,14 @@
+<% @vids.each_with_index do |vid,index| %>
+
+	<% vid.each_with_index do |vid,index|%>
+		<div style="float:left; width:<%= vid.thumbnails[0].width %>px; height:<%= vid.thumbnails[0].height %>px;">
+			<img src="<%= vid.thumbnails[0].url %>" width="<%= vid.thumbnails[0].width %>" height="<%= vid.thumbnails[0].height %>"/>
+		</div>
+	<% end %>
+<% end %>
+
+
+
+<div class="clear">
+
+
